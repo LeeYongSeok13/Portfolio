@@ -1,0 +1,30 @@
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#Main .Introduce {
+    background: url('../img/Introduce_background.jpg') no-repeat fixed center center/cover;
+}
+
+#Main .Portfolio .fp-controlArrow {
+    border-color: transparent #ddd;
+}
+
+
+#Main .Portfolio .slide01 .introduce {
+    float: left;
+    width: 50%;
+}
+
+#Main .Portfolio .slide02 {
+    background: #0f0;
+}
+
+#Main .Portfolio .slide03 {
+    background: #f00;
+}
+
+#Main .End {
+    background: #369;
+}

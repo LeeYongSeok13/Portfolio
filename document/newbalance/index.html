@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW BALANCE</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="Wrap">
+        <header id="header">
+            <section id="top_banner">
+                <div class="container">
+                    <h1>
+                        <a href="">
+                            <img src="./img/logo_mynb.png" alt="">
+                        </a>
+                    </h1>
+                    <ul>
+                        <li><a href="">매장찾기</a></li>
+                        <li><a href="">고객센터</a></li>
+                        <li><a href="">Membership</a></li>
+                        <li><a href="">로그인</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="header_menu">
+                <div class="container">
+                    <h1>
+                        <a href="">
+                            <img src="./img/logo.png" alt="">
+                        </a>
+                    </h1>
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="">New Release</a>
+                            </li>
+                            <li>
+                                <a href="">Sale</a>
+                            </li>
+                            <li>
+                                <a href="">Men</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">언더웨어</a></li>
+                                    <li><a href="">스포츠</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Women</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                    <li><a href="">스포츠</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Kids</a>
+                                <ul>
+                                    <li><a href="">신발</a></li>
+                                    <li><a href="">의류</a></li>
+                                    <li><a href="">용품</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Shoes</a>
+                            </li>
+                            <li>
+                                <a href="">Online Shop</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <form action="javascript:searchAction()">
+                            <input type="text" placeholder="검색">
+                            <button>
+                                <i class="xi-search"></i>
+                            </button>
+                        </form>
+                        <script>
+                            function searchAction() {
+                                var searchValue = $('.search input').val();
+                                if (searchValue.length < 3) {
+                                    alert('3글자 이상으로 입력해주세요');
+                                } else {
+                                    alert(searchValue);
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class="menu_button">
+                        <i class="xi-bars"></i>
+                    </div>
+                </div>
+            </section>
+            <section id="ad_banner">
+                <div class="inner">
+                    <h2>NEW BALANCE 공식 모바일 어플리케이션 런칭</h2>
+                    <p>모바일 어플리케이션 런칭 기념으로 회원가입시 5000원 할인 쿠폰을 드립니다.(일부상품 제외)</p>
+                    <a href="">more</a>
+                    <i class="xi-close"></i>
+                </div>
+            </section>
+        </header>
+        <main id="main">
+            <section id="main_visual">
+                <div class="main_slider">
+                    <figure class="itm01"></figure>
+                    <figure class="itm02"></figure>
+                    <figure class="itm03"></figure>
+                </div>
+                <div class="angle">
+                    <i class="xi-angle-left-thin"></i>
+                    <i class="xi-angle-right-thin"></i>
+                </div>
+            </section>
+            <section id="model_information">
+                <div class="video">
+                    <div class="container">
+                        <h2>NEWBALANCE WITH IU</h2>
+                        <video src="./img/newbalance.mp4" class="iu" autoplay loop></video>
+                        <div class="controls">
+                            <i class="xi-pause"></i>
+                            <i class="xi-play"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="new_shirt">
+                <div class="container">
+                    <h2>NEWBALANCE SUMMER EDITION</h2>
+                    <p>2022년 여름 신상품으로 출시된 NEW BALANCE의 시그니처 상품</p>
+                    <div class="shirt_slider">
+                        <figure>
+                            <img src="./img/shirt01.jpg" alt="">
+                            <strong>Women 세미크롭 집업 래쉬가드</strong>
+                            <p>89,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/shirt02.jpg" alt="">
+                            <strong>Women 세미크롭 집업 래쉬가드</strong>
+                            <p>89,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/long_shirt01.jpg" alt="">
+                            <strong>UNI 베이직 래쉬가드</strong>
+                            <p>79,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/long_shirt02.jpg" alt="">
+                            <strong>UNI 베이직 래쉬가드</strong>
+                            <p>79,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/long_shirt03.jpg" alt="">
+                            <strong>UNI 베이직 래쉬가드</strong>
+                            <p>79,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/long_shirt04.jpg" alt="">
+                            <strong>Women 베이직 집업 래쉬가드</strong>
+                            <p>99,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/long_shirt05.jpg" alt="">
+                            <strong>Women 베이직 집업 래쉬가드</strong>
+                            <p>99,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/t-shirt01.jpg" alt="">
+                            <strong>Men NB Athletics Intelligent 반팔티</strong>
+                            <p>39,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/t-shirt02.jpg" alt="">
+                            <strong>Men NB Athletics Intelligent 반팔티</strong>
+                            <p>39,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/t-shirt03.jpg" alt="">
+                            <strong>Men NB Athletics Intelligent 반팔티</strong>
+                            <p>39,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/t-shirt04.jpg" alt="">
+                            <strong>Men NB Athletics Nature State 반팔티</strong>
+                            <p>39,900원</p>
+                        </figure>
+                        <figure>
+                            <img src="./img/t-shirt05.jpg" alt="">
+                            <strong>Men NB Athletics Nature State 반팔티</strong>
+                            <p>39,900원</p>
+                        </figure>
+                    </div>
+                    <div class="arrow">
+                        <i class="xi-arrow-left"></i>
+                        <i class="xi-arrow-right"></i>
+                    </div>
+                </div>
+                <section id="model">
+                </section>
+            </section>
+            <section id="category">
+                <div class="container">
+                    <h2>NEW BALANCE'S STYLE</h2>
+                    <p>뉴발란스가 추천하는 2022년 올해의 스타일</p>
+                    <div class="tab_menu">
+                        <figure class="on">
+                            <img src="./img/NBheritage.jpg" alt="">
+                            <div class="inner">
+                                <strong>Heritage Edition</strong>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/NBmen.jpg" alt="">
+                            <div class="inner">
+                                <strong>Men's Style</strong>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/NBwomen.jpg" alt="">
+                            <div class="inner">
+                                <strong>Women's Style</strong>
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="tab_content">
+                        <div class="on">
+                            <h2>NB Heritage Edition</h2>
+                            <div class="figure_box">
+                                <figure>
+                                    <img src="./img/Heritage01_front.jpg" alt="">
+                                    <img src="./img/Heritage01_back.jpg" alt="">
+                                    <strong>NB 헤리티지 백 레터 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/Heritage02_front.jpg" alt="">
+                                    <img src="./img/Heritage02_back.jpg" alt="">
+                                    <strong>NB 헤리티지 백 레터 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/Heritage03_front.jpg" alt="">
+                                    <img src="./img/Heritage03_back.jpg" alt="">
+                                    <strong>NB 헤리티지 백 레터 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/Heritage04_man.jpg" alt="">
+                                    <img src="./img/Heritage04_woman.jpg" alt="">
+                                    <strong>NB 헤리티지 레터 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>NB Men's Style</h2>
+                            <div class="figure_box">
+                                <figure>
+                                    <img src="./img/men01_front.jpg" alt="">
+                                    <img src="./img/men01_back.jpg" alt="">
+                                    <strong>UNI 아이비 보이 백패킹 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/men02_front.jpg" alt="">
+                                    <img src="./img/men02_back.jpg" alt="">
+                                    <strong>UNI 아이비 보이 백패킹 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/men03_front.jpg" alt="">
+                                    <img src="./img/men03_back.jpg" alt="">
+                                    <strong>UNI 아이비 보이 백패킹 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/men04_front.jpg" alt="">
+                                    <img src="./img/men04_back.jpg" alt="">
+                                    <strong>UNI 아이비 보이 백패킹 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                            </div>
+                        </div>
+                        <div>
+                            <h2>NB Women's Style</h2>
+                            <div class="figure_box">
+                                <figure>
+                                    <img src="./img/women01_front.jpg" alt="">
+                                    <img src="./img/women01_back.jpg" alt="">
+                                    <strong>UNI 아이비 걸 가드닝 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/women02_front.jpg" alt="">
+                                    <img src="./img/women02_back.jpg" alt="">
+                                    <strong>UNI 아이비 걸 가드닝 반팔티</strong>
+                                    <p>49,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/women03.jpg" alt="">
+                                    <img src="./img/women03_product.jpg" alt="">
+                                    <strong>WOMEN COURT 카라 반팔티</strong>
+                                    <p>69,900원</p>
+                                </figure>
+                                <figure>
+                                    <img src="./img/women04.jpg" alt="">
+                                    <img src="./img/women04_product.jpg" alt="">
+                                    <strong>WOMEN COURT 카라 반팔티</strong>
+                                    <p>69,900원</p>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="setup">
+                <div class="container">
+                    <h2>SET-UP</h2>
+                    <div class="setup_main">
+                        <figure>
+                            <img src="./img/NBcasual.jpg" alt="">
+                            <div class="inner">
+                                <h2>Casual</h2>
+                                <h3>캐주얼</h3>
+                                <p><a href="">더보기<i class="xi-arrow-right"></i></a></p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/NBsummer.jpg" alt="">
+                            <div class="inner">
+                                <h2>Summer</h2>
+                                <h3>여름</h3>
+                                <p><a href="">더보기<i class="xi-arrow-right"></i></a></p>
+                            </div>
+                        </figure>
+                        <figure>
+                            <img src="./img/NBkids.jpg" alt="">
+                            <div class="inner">
+                                <h2>Kids</h2>
+                                <h3>어린이</h3>
+                                <p><a href="">더보기<i class="xi-arrow-right"></i></a></p>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <section id="nb_information">
+                <div class="container">
+                    <div class="nav_footer">
+                        <ul>
+                            <li>
+                                <a href="">Support</a>
+                                <ul>
+                                    <li><a href="">고객센터</a></li>
+                                    <li><a href="">F&amp;Q</a></li>
+                                    <li><a href="">공지사항</a></li>
+                                    <li><a href="">이용약관</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Information</a>
+                                <ul>
+                                    <li><a href="">배송 및 교환 안내</a></li>
+                                    <li><a href="">통합 마일리지 안내</a></li>
+                                    <li><a href="">Sitemap</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">About NB</a>
+                                <ul>
+                                    <li><a href="">New Balance</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">Shop</a>
+                                <ul>
+                                    <li><a href="">New Relase</a></li>
+                                    <li><a href="">Sale</a></li>
+                                    <li><a href="">Men</a></li>
+                                    <li><a href="">Women</a></li>
+                                    <li><a href="">Kids</a></li>
+                                    <li><a href="">Shoes</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="sns">
+                            <a href=""><i class="xi-kakaotalk"></i></a>
+                            <a href=""><i class="xi-facebook"></i></a>
+                            <a href=""><i class="xi-instagram"></i></a>
+                            <a href=""><i class="xi-twitter"></i></a>
+                        </div>
+                        <div class="info_footer">
+                            <ul>
+                                <li><a href="">개인정보처리방침</a></li>
+                                <li><a href="">서울특별시 금천구 가산디지털1로 159 이랜드월드</a></li>
+                                <li><a href="">온라인 고객센터 : 1566-0086</a></li>
+                                <li><a href="">오프라인 고객센터 / AS : 080-999-0456</a></li>
+                                <li><a href="">대표 email : webmaster@nbkorea.com</a></li>
+                            </ul>
+                            <div class="link">
+                                <select id="l">
+                                    <option value="">family link</option>
+                                    <option value="">kakaotalk</option>
+                                    <option value="">facebook</option>
+                                    <option value="">instagram</option>
+                                    <option value="">twitter</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+    </div>
+
+
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
