@@ -3,28 +3,40 @@
     margin: 0 auto;
 }
 
-#Main .Introduce {
-    background: url('../img/Introduce_background.jpg') no-repeat fixed center center/cover;
+#Header .container .Gnb ul {
+    display: flex;
+    justify-content: space-between;
 }
 
-#Main .Portfolio .fp-controlArrow {
-    border-color: transparent #ddd;
+.section {
+    height: 100vh;
 }
 
+.section01 .introduce_box {
+    position: relative;
+    top: -200px;
+}
 
-#Main .Portfolio .slide01 .introduce {
-    float: left;
+.section01 .introduce_box h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.section01 .introduce_box p {
+    position: relative;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.section01 .introduce_box p::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: calc(100% + 10px);
+    left: 0;
     width: 50%;
-}
-
-#Main .Portfolio .slide02 {
-    background: #0f0;
-}
-
-#Main .Portfolio .slide03 {
-    background: #f00;
-}
-
-#Main .End {
-    background: #369;
+    height: 3px;
+    background: #a0d3f9;
+    border-radius: 5px;
 }

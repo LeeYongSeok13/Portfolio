@@ -1,5 +1,5 @@
 $(function () {
-    $('#Main').fullpage({
-        anchors: ['Introduce', 'Portfolio', 'End'],
+    $('#Fullpage').fullpage({
+        navigation: true,
     })
-});
+})
