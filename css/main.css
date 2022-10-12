@@ -3,9 +3,12 @@
     margin: 0 auto;
 }
 
-#Header .container .Gnb ul {
-    display: flex;
-    justify-content: space-between;
+.dis {
+    margin: 0 0 0 100px;
+}
+
+.col_b {
+    color: #ff3232;
 }
 
 .section {
@@ -14,29 +17,103 @@
 
 .section01 .introduce_box {
     position: relative;
-    top: -200px;
+    line-height: 1.414;
+    color: #fff;
+    transition: 0.5s;
 }
 
-.section01 .introduce_box h2 {
-    font-size: 55px;
+.section01 .introduce_box p {
+    font-size: 30px;
     font-weight: 700;
     margin: 0 0 20px 0;
 }
 
-.section01 .introduce_box p {
-    position: relative;
-    font-size: 25px;
-    font-weight: 500;
+.section01 .wheel_icon .wheel {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 20px;
 }
 
-.section01 .introduce_box p::after {
+.section01 .wheel_icon .wheel span {
+    font-size: 0;
     position: absolute;
-    content: "";
-    display: block;
-    top: calc(100% + 10px);
-    left: 0;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    background: #fff;
+    border-radius: 2px;
+    animation: wheel 0.5s infinite;
+}
+
+.section01 .wheel_icon .wheel strong {
+    position: absolute;
+    display: inline-block;
+    bottom: -23px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+    animation: wheelstrong 0.5s linear infinite alternate;
+}
+
+p.typing-txt {
+    display: none;
+}
+
+.typing {
+    /*position: absolute;*/
+    display: inline-block;
+    animation-name: cursor;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+}
+
+.section02 .dis h2 {
+    position: relative;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+
+.section .dis .left {
+    float: left;
+    width: 30%;
+}
+
+.section .dis .left figure {
     width: 50%;
-    height: 3px;
-    background: #a0d3f9;
-    border-radius: 5px;
+    margin: 0 0 20px 0;
+}
+
+
+
+
+.section03 {
+    text-align: center;
+}
+
+.section03 h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 50px 0;
+}
+
+@keyframes wheel {
+    to {
+        top: 5px;
+    }
+}
+
+@keyframes wheelstrong {
+    to {
+        bottom: -30px;
+    }
 }
