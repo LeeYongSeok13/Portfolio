@@ -11,6 +11,16 @@
     color: #ff3232;
 }
 
+.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.Header .container ul {
+    display: flex;
+}
+
 .section {
     height: 100vh;
 }
@@ -18,14 +28,33 @@
 .section01 .introduce_box {
     position: relative;
     line-height: 1.414;
-    color: #fff;
+    color: #ddd;
     transition: 0.5s;
 }
 
-.section01 .introduce_box p {
-    font-size: 30px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
+.section01 .container .left {
+    float: left;
+    width: 50%;
+}
+
+.section01 .container .left h2 {
+    position: relative;
+    left: -100px;
+    font-size: 85px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section .container .right {
+    float: right;
+    width: 50%;
+}
+
+.section01 .container .left.on h2 {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section01 .wheel_icon .wheel {
@@ -64,46 +93,59 @@
     animation: wheelstrong 0.5s linear infinite alternate;
 }
 
-p.typing-txt {
-    display: none;
-}
-
-.typing {
-    /*position: absolute;*/
-    display: inline-block;
-    animation-name: cursor;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
-}
-
 .section02 .dis h2 {
     position: relative;
     font-size: 45px;
     font-weight: 700;
+    text-align: center;
     margin: 0 0 50px 0;
 }
 
-.section .dis .left {
+.section02 .dis .left {
     float: left;
-    width: 30%;
+    width: 25%;
+    background: #d6c6b6;
+    padding: 20px;
+    border-radius: 20px;
 }
 
-.section .dis .left figure {
+.section02 .dis .left figure {
     width: 50%;
     margin: 0 0 20px 0;
 }
 
-
-
-
-.section03 {
-    text-align: center;
+.section02 .dis .left .profile h2 {
+    position: relative;
+    font-size: 30px;
+    font-weight: 700;
 }
 
-.section03 h2 {
-    font-size: 45px;
-    font-weight: 700;
-    margin: 0 0 50px 0;
+.section02 .dis .left .profile .profile_inner {
+    display: flex;
+    gap: 20px;
+    line-height: 1.414;
+}
+
+.section02 .dis .left .profile .profile_inner .profile_left_ul {
+    position: relative;
+    float: left;
+    width: 15%;
+}
+
+.section02 .dis .left .profile .profile_inner .profile_left_ul li::after {
+    position: absolute;
+    content: ":";
+    left: 100%;
+}
+
+.section02 .dis .profile .profile_inner .profile_right_ul {
+    float: right;
+    width: 85%;
+}
+
+.section02 .dis .right {
+    float: right;
+    width: 75%;
 }
 
 @keyframes wheel {
