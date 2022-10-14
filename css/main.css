@@ -4,25 +4,62 @@
 }
 
 .dis {
-    margin: 0 0 0 100px;
-}
-
-.col_b {
-    color: #ff3232;
-}
-
-.Header {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.Header .container ul {
-    display: flex;
+    margin: 0 100px;
 }
 
 .section {
     height: 100vh;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+}
+
+.top h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.link {
+    display: flex;
+    gap: 50px;
+}
+
+.link a {
+    padding: 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+.link a:hover {
+    color: #fff;
+    background: #000;
+}
+
+.middle {
+    margin: 0 0 20px 0;
+}
+
+.middle figure img {
+    width: 100%;
+    height: 500px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 100px;
+    z-index: 999;
+    background: inherit;
+}
+
+#header .fixed {
+    width: 100%;
+    margin: 0 100px;
 }
 
 .section01 .introduce_box {
@@ -51,8 +88,23 @@
     width: 50%;
 }
 
+.section .container .right h2 {
+    position: relative;
+    top: -100px;
+    font-size: 85px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s 0.5s;
+}
+
 .section01 .container .left.on h2 {
     left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+.section01 .container .right.on h2 {
+    top: 0;
     opacity: 1;
     visibility: visible;
 }
@@ -93,7 +145,8 @@
     animation: wheelstrong 0.5s linear infinite alternate;
 }
 
-.section02 .dis h2 {
+
+.section07 .dis h2 {
     position: relative;
     font-size: 45px;
     font-weight: 700;
@@ -101,7 +154,7 @@
     margin: 0 0 50px 0;
 }
 
-.section02 .dis .left {
+.section07 .dis .left {
     float: left;
     width: 25%;
     background: #d6c6b6;
@@ -109,43 +162,87 @@
     border-radius: 20px;
 }
 
-.section02 .dis .left figure {
+.section07 .dis .left figure {
     width: 50%;
     margin: 0 0 20px 0;
 }
 
-.section02 .dis .left .profile h2 {
+.section07 .dis .left .profile h2 {
     position: relative;
     font-size: 30px;
     font-weight: 700;
+    text-align: left;
 }
 
-.section02 .dis .left .profile .profile_inner {
+.section07 .dis .left .profile .profile_inner {
     display: flex;
     gap: 20px;
     line-height: 1.414;
 }
 
-.section02 .dis .left .profile .profile_inner .profile_left_ul {
+.section07 .dis .left .profile .profile_inner .profile_left_ul {
     position: relative;
-    float: left;
-    width: 15%;
 }
 
-.section02 .dis .left .profile .profile_inner .profile_left_ul li::after {
+.section07 .dis .left .profile .profile_inner .profile_left_ul li::after {
     position: absolute;
     content: ":";
-    left: 100%;
+    left: calc(100% + 10px);
 }
 
-.section02 .dis .profile .profile_inner .profile_right_ul {
+.section07 .dis .profile .profile_inner .profile_right_ul {
     float: right;
     width: 85%;
 }
 
-.section02 .dis .right {
+.section07 .dis .right {
     float: right;
     width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section07 .dis .right h2 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.section07 .dis .right .career_inner {
+    display: flex;
+    line-height: 1.414;
+}
+
+.section07 .dis .right .career_inner .career_left_ul {
+    position: relative;
+}
+
+.sub {
+    position: fixed;
+    width: 100%;
+    margin: 0 100px;
+    position: fixed;
+    bottom: 50px;
+    z-index: 999;
+}
+
+#footer {
+    width: 100%;
+    margin: 0 100px;
+    position: fixed;
+    bottom: 50px;
+    left: 1200px;
+    z-index: 999;
+}
+
+#footer ul {
+    display: flex;
+}
+
+#footer ul li {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
 }
 
 @keyframes wheel {
