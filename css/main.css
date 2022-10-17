@@ -49,17 +49,124 @@
 
 #header {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: calc(100% - 200px);
+    justify-content: space-between;
+    margin: 0 auto;
     line-height: 100px;
     z-index: 999;
     background: inherit;
 }
 
 #header .fixed {
-    width: 100%;
-    margin: 0 100px;
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+#header .fixed.on {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#header .allOpen {
+    margin: 25px 0 0 0;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#header .allOpen button {
+    font-size: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+#header .allOpen::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 3px;
+    left: 5px;
+    right: 5px;
+    height: 3px;
+    background: #000;
+}
+
+#header .allOpen.on::before {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+#header .allOpen::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 44px;
+    left: 5px;
+    right: 5px;
+    height: 3px;
+    background: #000;
+}
+
+#header .allOpen.on::after {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+#header .allOpen span {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 3px;
+    background: #000;
+    opacity: 1;
+    visibility: visible;
+}
+
+#header .allOpen.on span {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.section .container .right {
+    float: right;
+    width: 50%;
+}
+
+.section .container .right h2 {
+    position: relative;
+    top: -100px;
+    font-size: 85px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s 0.5s;
+}
+
+.section .container .bottom ul {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.414;
+}
+
+.section .container .bottom>ul>li>ul {
+    gap: 30px;
+}
+
+.section .container .bottom .color li {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
 }
 
 .section01 .introduce_box {
@@ -81,20 +188,6 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.5s;
-}
-
-.section .container .right {
-    float: right;
-    width: 50%;
-}
-
-.section .container .right h2 {
-    position: relative;
-    top: -100px;
-    font-size: 85px;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.5s 0.5s;
 }
 
 .section01 .container .left.on h2 {
@@ -145,8 +238,49 @@
     animation: wheelstrong 0.5s linear infinite alternate;
 }
 
+.section02 .container .bottom .color li:nth-child(1) {
+    background: #fff;
+}
 
-.section07 .dis h2 {
+.section02 .container .bottom .color li:nth-child(2) {
+    background: #194e92;
+}
+
+.section02 .container .bottom .color li:nth-child(3) {
+    background: #464d5d;
+}
+
+.section05 .container>* {
+    position: relative;
+    float: left;
+    width: 20%;
+    overflow: hidden;
+}
+
+.section05 .container .top {
+    width: 100%;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+.section05 .container .middle {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section05 .container .middle figure {
+    width: 100%;
+}
+
+.section05 .container .middle figure img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+
+.section06 .dis h2 {
     position: relative;
     font-size: 45px;
     font-weight: 700;
@@ -154,7 +288,7 @@
     margin: 0 0 50px 0;
 }
 
-.section07 .dis .left {
+.section06 .dis .left {
     float: left;
     width: 25%;
     background: #d6c6b6;
@@ -162,59 +296,59 @@
     border-radius: 20px;
 }
 
-.section07 .dis .left figure {
+.section06 .dis .left figure {
     width: 50%;
     margin: 0 0 20px 0;
 }
 
-.section07 .dis .left .profile h2 {
+.section06 .dis .left .profile h2 {
     position: relative;
     font-size: 30px;
     font-weight: 700;
     text-align: left;
 }
 
-.section07 .dis .left .profile .profile_inner {
+.section06 .dis .left .profile .profile_inner {
     display: flex;
     gap: 20px;
     line-height: 1.414;
 }
 
-.section07 .dis .left .profile .profile_inner .profile_left_ul {
+.section06 .dis .left .profile .profile_inner .profile_left_ul {
     position: relative;
 }
 
-.section07 .dis .left .profile .profile_inner .profile_left_ul li::after {
+.section06 .dis .left .profile .profile_inner .profile_left_ul li::after {
     position: absolute;
     content: ":";
     left: calc(100% + 10px);
 }
 
-.section07 .dis .profile .profile_inner .profile_right_ul {
+.section06 .dis .profile .profile_inner .profile_right_ul {
     float: right;
     width: 85%;
 }
 
-.section07 .dis .right {
+.section06 .dis .right {
     float: right;
     width: 75%;
     display: flex;
     justify-content: space-between;
 }
 
-.section07 .dis .right h2 {
+.section06 .dis .right h2 {
     position: relative;
     font-size: 35px;
     font-weight: 700;
     text-align: left;
 }
 
-.section07 .dis .right .career_inner {
+.section06 .dis .right .career_inner {
     display: flex;
     line-height: 1.414;
 }
 
-.section07 .dis .right .career_inner .career_left_ul {
+.section06 .dis .right .career_inner .career_left_ul {
     position: relative;
 }
 
@@ -225,6 +359,13 @@
     position: fixed;
     bottom: 50px;
     z-index: 999;
+    opacity: 1;
+    visibility: visible;
+}
+
+.sub.on {
+    opacity: 0;
+    visibility: hidden;
 }
 
 #footer {
@@ -234,6 +375,8 @@
     bottom: 50px;
     left: 1200px;
     z-index: 999;
+    opacity: 1;
+    visibility: visible;
 }
 
 #footer ul {
@@ -245,6 +388,38 @@
     border: 1px solid #ddd;
 }
 
+#footer.on {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cover {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #fff;
+    animation: cover 1s ease;
+}
+
+.cover.on {
+    display: block;
+}
+
+.cover ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 1.414;
+    font-size: 35px;
+}
+
 @keyframes wheel {
     to {
         top: 5px;
@@ -254,5 +429,17 @@
 @keyframes wheelstrong {
     to {
         bottom: -30px;
+    }
+}
+
+@keyframes cover {
+    from {
+        height: 0;
+        opacity: 0;
+    }
+
+    to {
+        height: 100vh;
+        opacity: 1;
     }
 }
