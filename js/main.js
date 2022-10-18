@@ -7,14 +7,12 @@ $(function () {
         loopBottom: true,
         afterLoad: function (anchorLink, index) {
             if (index == 1) {
-                $('.section01 .container .left').addClass('on');
-                $('.section01 .container .right').addClass('on');
+
             }
         },
         onLeave: function (index, nextIndex, direction) {
             if (index == 1) {
-                $('.section01 .container .left').removeClass('on');
-                $('.section01 .container .right').removeClass('on');
+
             }
         }
     });
@@ -38,7 +36,12 @@ $(function () {
     $('.cover ul li').on('click', function () {
         $('.cover').removeClass('on');
         $('#header .fixed').toggleClass('on');
-        $('.#footer').toggleClass('on');
+        $('#footer').toggleClass('on');
         $('.sub').toggleClass('on');
+        $('.allOpen').toggleClass('on');
+    });
+
+    $('.link .des').on('click', function () {
+        $('.des_main').toggleClass('on');
     })
 })
