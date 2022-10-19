@@ -43,5 +43,18 @@ $(function () {
 
     $('.link .des').on('click', function () {
         $('.des_main').toggleClass('on');
+    });
+
+    $(".case a").on("mouseenter", function () {
+        let imgH = $(this).find("img").height();
+        let caseH = $(this).height();
+        $(this).find("img").css({
+            top: -(imgH - caseH)
+        })
+    });
+    $(".case a").on("mouseleave", function () {
+        $(this).find("img").css({
+            top: 0
+        })
     })
 })
