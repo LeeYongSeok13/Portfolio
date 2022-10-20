@@ -1,0 +1,18 @@
+.Blog {
+    padding: 100px;
+}
+
+
+.Bloglist .container {
+    display: block;
+}
+
+.Bloglist .container .tab {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 50px 0;
+}
+
+.Bloglist .container .content {
+    justify-content: space-between;
+}

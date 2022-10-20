@@ -1,0 +1,213 @@
+.MainVisual {
+    position: relative;
+}
+
+.MainVisual>div {
+    height: 800px;
+}
+
+.MainSlider figure {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.MainSlider .itm01 {
+    background-image: url('../../public/images/mainVisual01.jpg');
+}
+
+.MainSlider .itm02 {
+    background-image: url('../../public/images/MainVisual02.jpg');
+}
+
+.MainSlider .itm03 {
+    background-image: url('../../public/images/MainVisual03.jpg');
+}
+
+.MainSlider .itm04 {
+    background-image: url('../../public/images/MainVisual04.png');
+}
+
+.MainSlider .itm05 {
+    background-image: url('../../public/images/MainVisual05.jpg');
+}
+
+.MainSlider .inner_content {
+    position: absolute;
+    top: 300px;
+    left: 350px;
+}
+
+.MainSlider .inner_content figure {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.MainSlider .inner_content .logo01 {
+    background-image: url('../../public/images/Slidetitle01.png');
+}
+
+.MainSlider .inner_content .logo02 {
+    background-image: url('../../public/images/Slidetitle02.png');
+}
+
+.MainSlider .inner_content .logo03 {
+    background-image: url('../../public/images/Slidetitle03.png');
+}
+
+.MainSlider .inner_content .logo04 {
+    background-image: url('../../public/images/Slidetitle04.png');
+}
+
+.MainSlider .inner_content .logo05 {
+    background-image: url('../../public/images/Slidetitle05.png');
+}
+
+.MainSlider .inner_content span a {
+    display: flex;
+    line-height: 50px;
+    gap: 30px;
+    padding: 20px 40px;
+    font-size: 20px;
+    background: #5bce66;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+    filter: brightness(1);
+}
+
+.MainSlider .inner_content span img {
+    width: 50px;
+    height: 50px;
+}
+
+
+.MainSlider .inner_content span a:hover {
+    filter: brightness(1.15);
+}
+
+.MainSlider .inner_content span .download {
+    position: relative;
+    line-height: 1.414;
+}
+
+.MainSlider .inner_content span .download::before {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 0%;
+    left: -15px;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+}
+
+.MainSlider .inner_content span .download h2 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.MainSlider .inner_content span .download p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.Rank {
+    padding: 5px 0;
+    background: #113965;
+    color: #fff;
+    text-align: center;
+}
+
+.Rank strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.Rank ul li {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.Advertise {
+    padding: 100px 0;
+    background: url('../../public/images/advertise_bg.png') no-repeat center center/cover;
+}
+
+.Advertise .container {
+    display: block;
+}
+
+.Advertise .container .Ad01 {
+    display: flex;
+    gap: 50px;
+}
+
+.Advertise .container .Ad01 figure {
+    float: left;
+    width: 50%;
+}
+
+.Advertise .container .Ad01 figure img {
+    width: 100%;
+}
+
+.Advertise .container .Ad01 .Ad01_sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.Advertise .container .Ad01 .Ad01_sub h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.Advertise .container .Ad01 .Ad01_sub p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.414;
+}
+
+.Advertise .container .Ad02 {
+    display: flex;
+    gap: 50px;
+}
+
+.Advertise .container .Ad02 figure {
+    float: right;
+    width: 50%;
+}
+
+.Advertise .container .Ad02 figure img {
+    width: 100%;
+}
+
+.Advertise .container .Ad02 .Ad02_sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.Advertise .container .Ad02 .Ad02_sub h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+.Advertise .container .Ad02 .Ad02_sub p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.414;
+}
