@@ -211,9 +211,18 @@ img {
 
 .section02 .left {
     position: relative;
-    left: 100px;
+    left: 0;
     float: left;
     width: 25%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section02 .left.on {
+    left: 100px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section02 .left strong {
@@ -368,10 +377,19 @@ img {
 
 .section03 .right {
     position: relative;
-    right: 100px;
+    right: 0px;
     float: right;
     width: 25%;
     text-align: right;
+    opacity: 0;
+    visibility: visible;
+    transition: 0.5s;
+}
+
+.section03 .right.on {
+    right: 100px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section03 .right strong {
@@ -440,9 +458,18 @@ img {
 
 .section04 .left {
     position: relative;
-    left: 100px;
+    left: 0;
     float: left;
     width: 25%;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section04 .left.on {
+    left: 100px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section04 .left strong {
@@ -623,19 +650,28 @@ img {
     position: relative;
     font-size: 45px;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     margin: 0 0 50px 0;
 }
 
 .section06 .dis .left {
     position: relative;
     float: left;
-    left: 200px;
+    left: 100px;
     width: 30%;
     background: #d6c6b6;
     padding: 60px 30px;
     border-radius: 20px;
     color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.section .dis .left.on {
+    left: 200px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section06 .dis .left figure {
@@ -682,14 +718,22 @@ img {
 .section06 .dis .right {
     position: relative;
     float: right;
-    left: 200px;
+    left: 300px;
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     justify-content: space-between;
     padding: 0 200px 0 300px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s 0.5s;
+}
 
+.section06 .dis .right.on {
+    left: 200px;
+    opacity: 1;
+    visibility: visible;
 }
 
 .section06 .dis .right h2 {

@@ -6,14 +6,39 @@ $(function () {
         loopTop: true,
         loopBottom: true,
         afterLoad: function (anchorLink, index) {
-            if (index == 1) {
+            if (index == 2) {
+                $('.section02 .left').addClass('on');
+            };
 
+            if (index == 3) {
+                $('.section03 .right').addClass('on');
+            };
+
+            if (index == 4) {
+                $('.section04 .left').addClass('on');
             }
+
+            if (index == 6) {
+                $('.section06 .left').addClass('on');
+                $('.section06 .right').addClass('on');
+            };
         },
         onLeave: function (index, nextIndex, direction) {
-            if (index == 1) {
+            if (index == 2) {
+                $('.section02 .left').removeClass('on');
+            };
 
+            if (index == 3) {
+                $('.section03 .right').removeClass('on');
+            };
+
+            if (index == 4) {
+                $('.section04 .left').removeClass('on');
             }
+            if (index == 6) {
+                $('.section06 .left').removeClass('on');
+                $('.section06 .right').removeClass('on');
+            };
         }
     });
 
