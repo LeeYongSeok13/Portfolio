@@ -56,7 +56,12 @@ strong {
 
 .main_menu .container {
     display: block;
+    width: 800px;
     text-align: center;
+    line-height: 75px;
+}
+
+.main_menu.on .container {
     line-height: 50px;
 }
 
@@ -74,7 +79,7 @@ strong {
     position: absolute;
     content: "";
     display: block;
-    top: 47px;
+    top: 72px;
     left: 50%;
     transform: translateX(-50%);
     width: 0;
@@ -83,8 +88,17 @@ strong {
     transition: 0.5s;
 }
 
+.main_menu.on .container ul>li::after {
+    top: 47px;
+}
+
 .main_menu .container ul>li:hover::after {
+    top: 72px;
     width: 100%;
+}
+
+.main_menu.on .container ul>li:hover::after {
+    top: 47px;
 }
 
 .main_menu .container ul>li>ul {
@@ -92,13 +106,18 @@ strong {
     display: block;
     background: #194e92;
     width: 160px;
-    top: 50px;
+    top: 75px;
     left: 50%;
     transform: translateX(-50%);
+    line-height: 50px;
     opacity: 0;
     visibility: hidden;
     z-index: 999;
     transition: 0.5s;
+}
+
+.main_menu.on .container ul>li>ul {
+    top: 50px;
 }
 
 .main_menu .container ul>li:hover>ul {
@@ -317,7 +336,7 @@ strong {
 #brand {
     margin: 100px 0;
     padding: 100px 0;
-    background: url('../img/brand_bg01.jpg');
+    background: url('../img/brand_bg01.jpg')no-repeat center center/cover;
 }
 
 #brand ul {
@@ -330,7 +349,6 @@ strong {
     background: rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 50px;
-
 }
 
 #brand ul li h2 {
@@ -472,7 +490,7 @@ strong {
 
 
 #Footer_top {
-    padding: 25px 0;
+    padding: 100px 0 25px 0;
     background: #464d5d;
     border-bottom: 1px solid #fff;
 }
@@ -537,7 +555,7 @@ strong {
 }
 
 #Footer_bottom {
-    padding: 25px 0;
+    padding: 25px 0 100px 0;
     background: #464d5d;
 }
 
@@ -586,6 +604,7 @@ strong {
     padding: 10px;
     background: #f3f3f3;
     border-radius: 20px;
+    cursor: pointer;
     z-index: 999;
 }
 

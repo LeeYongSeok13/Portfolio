@@ -264,45 +264,6 @@ p {
     margin: 0 0 0 800px;
 }
 
-#model_information {
-    display: flex;
-    padding: 100px 0;
-}
-
-#model_information .container {
-    display: block;
-}
-
-#model_information .container h2 {
-    text-align: center;
-    margin: 0 0 50px 0;
-}
-
-#model_information .video {
-    position: relative;
-}
-
-#model_information .video video {
-    width: 120%;
-}
-
-#model_information .video .controls i {
-    position: absolute;
-    inset: 50% auto auto 50%;
-    transform: translate(-50%, -50%);
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-}
-
-#model_information .video .controls i:nth-child(1) {
-    margin: 0 0 0 -20px;
-}
-
-#model_information .video .controls i:nth-child(2) {
-    margin: 0 0 0 20px;
-}
-
 #new_shirt {
     position: relative;
     padding: 100px;

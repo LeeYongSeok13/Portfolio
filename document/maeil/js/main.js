@@ -39,7 +39,6 @@ window.addEventListener('DOMContentLoaded', function () {
         })
     });
 
-
     let brandBg = document.querySelector('#brand');
     let brandLi01 = document.querySelector('#brand .container ul li:nth-child(1)');
     let brandLi02 = document.querySelector('#brand .container ul li:nth-child(2)');
