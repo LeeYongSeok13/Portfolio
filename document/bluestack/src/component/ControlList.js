@@ -33,9 +33,6 @@ const ControlList = () => {
         <section classList="ControlList">
             <div className="container">
                 <ul className="ControlTab">
-                    {
-                        CONTROLLIST.map(())
-                    }
                 </ul>
             </div>
         </section>

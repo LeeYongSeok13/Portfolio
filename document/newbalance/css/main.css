@@ -169,10 +169,12 @@ p {
 
 #ad_banner .inner p {
     font-size: 15px;
-    margin: 0 0 10px 0;
 }
 
 #ad_banner .inner a {
+    position: absolute;
+    top: 30px;
+    left: 600px;
     padding: 0 15px 3px 15px;
     background: #cf0a2c;
     color: #fff;
@@ -600,6 +602,13 @@ p {
 
 #nb_information .container .info_footer ul li {
     font-size: 13px;
+}
+
+#nb_information .container .link #l {
+    margin: 30px 0 0 0;
+    outline: 0;
+    border: 0;
+    border: 1px solid #ddd;
 }
 
 @media (max-width: 768px) {
