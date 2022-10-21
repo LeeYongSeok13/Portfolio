@@ -578,7 +578,7 @@ p {
         width: calc(100% - 200px);
         height: 100vh;
         z-index: 999;
-        background: #99f;
+        background: #fff;
         line-height: 40px;
         transition: 0.5s;
     }
@@ -605,9 +605,13 @@ p {
 
     .gnb>ul>li {
         position: relative;
-        border-bottom: 1px solid #ddd;
         opacity: 1;
         visibility: visible;
+    }
+
+    .gnb>ul>li a {
+        font-weight: 500;
+        border-bottom: 1px solid #ddd;
     }
 
     .gnb>ul>li>ul {
@@ -617,6 +621,15 @@ p {
         transform: translate(0);
         opacity: 1;
         visibility: visible;
+    }
+
+    .gnb>ul>li>ul>li a {
+        font-weight: 300;
+        border-bottom: none;
+    }
+
+    .gnb>ul>li>ul>li:nth-last-child(1) {
+        border-bottom: 1px solid #ddd;
     }
 
     .mbtn {
