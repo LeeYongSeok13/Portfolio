@@ -44,15 +44,11 @@ p {
     top: 0;
     width: 100%;
     line-height: 100px;
-    background: transparent;
+    background: #fff;
     z-index: 999;
     color: #a9a9a9;
     border-bottom: 1px solid #ddd;
     transition: 0.5s;
-}
-
-.header:hover {
-    background: #fff;
 }
 
 .header .container {
@@ -80,10 +76,12 @@ p {
     background: #fff;
     opacity: 0;
     transition: 0.5s;
+    visibility: hidden;
 }
 
 .header .container .left ul>li:hover>ul {
     opacity: 1;
+    visibility: visible;
 }
 
 .header .container .left ul>li::after {
@@ -169,7 +167,7 @@ p {
 }
 
 .fixed {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .fixed .fixed_img {
@@ -272,6 +270,16 @@ p {
 
 .item .container .explain p {
     font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 50px 0;
+    color: #000;
+}
+
+.item .container .explain strong {
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.414;
     color: #000;
 }
 
@@ -327,7 +335,6 @@ p {
 
 .beer_banner {
     position: relative;
-    padding: 50px 0;
 }
 
 .beer_banner .beer_slider figure {
@@ -368,6 +375,7 @@ p {
 
 .beer_banner .beer_slider figure h2 {
     transform: translateY(100px);
+    text-shadow: 1px 1px 3px #000;
     opacity: 0;
     transition: 0.5s 0.5s;
 }
@@ -379,53 +387,14 @@ p {
 
 .beer_banner .beer_slider figure p {
     transform: translateY(100px);
+    text-shadow: 1px 1px 3px #000;
     opacity: 0;
     transition: 0.5s 1s;
 }
 
-
 .beer_banner .beer_slider figure.on p {
-    transform: translateY(0);
+    transform: translateY(50px);
     opacity: 1;
-}
-
-.work {
-    padding: 50px 0;
-}
-
-.work .container {
-    display: block;
-}
-
-.work .container h2 {
-    position: relative;
-    font-size: 25px;
-    font-weight: 700;
-    text-align: left;
-    color: #000;
-    margin: 0 0 20px 0;
-}
-
-.work .container .work_inner {
-    display: flex;
-    gap: 50px;
-}
-
-.work .container .work_inner>div {
-    flex: 1;
-}
-
-.work .container .work_inner>div h2 {
-    position: relative;
-}
-
-.work .container .work_inner>div h2::after {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background: #000;
 }
 
 .footer {
