@@ -285,7 +285,7 @@ img {
     width: 800px;
     height: 450px;
     overflow: hidden;
-    z-index: 999;
+    z-index: 998;
 }
 
 .section02 .right:after {
@@ -313,6 +313,26 @@ img {
     position: relative;
     top: 0;
     transition: 8s;
+}
+
+.section02 .right .view {
+    position: relative;
+    top: 0;
+    left: 500px;
+    z-index: 999;
+}
+
+.section02 .right .view a {
+    font-size: 21px;
+    font-weight: 500;
+    padding: 5px 20px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.section02 .right .view a:hover {
+    background: #fff;
+    color: #99ccff;
 }
 
 .section03 {
@@ -498,6 +518,15 @@ img {
     margin: 0 0 20px 0;
 }
 
+.section04 .left ul {
+    display: flex;
+    gap: 20px;
+    color: #000;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 20px 0;
+}
+
 .section04 .left .Color .Color_inner {
     display: flex;
     gap: 20px;
@@ -661,7 +690,7 @@ img {
 .section06 .dis .left {
     position: relative;
     float: left;
-    left: 150px;
+    left: 200px;
     width: 30%;
     background: #d6c6b6;
     padding: 60px 30px;
@@ -673,7 +702,7 @@ img {
 }
 
 .section06 .dis .left.on {
-    left: 250px;
+    left: 300px;
     opacity: 1;
     visibility: visible;
 }
@@ -722,7 +751,7 @@ img {
 .section06 .dis .right {
     position: relative;
     float: right;
-    left: 220px;
+    left: 200px;
     width: 70%;
     display: flex;
     flex-direction: column;
@@ -735,7 +764,7 @@ img {
 }
 
 .section06 .dis .right.on {
-    left: 120px;
+    left: 100px;
     opacity: 1;
     visibility: visible;
 }
@@ -775,9 +804,9 @@ img {
 .section06 .dis .right .career_inner .career_left_ul li {
     position: relative;
     width: 50px;
-    height: 50px;
+    height: 25px;
     text-align: center;
-    line-height: 50px;
+    line-height: 25px;
     color: #000;
 }
 
@@ -793,7 +822,8 @@ img {
 }
 
 .section06 .dis .right .career_inner .career_right_ul li {
-    line-height: 50px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .section06 .dis .right .skill_inner ul {
@@ -819,7 +849,8 @@ img {
     width: 50px;
     height: 50px;
     text-align: center;
-    line-height: 50px;
+    height: 25px;
+    line-height: 25px;
     color: #000;
 }
 
@@ -835,7 +866,8 @@ img {
 }
 
 .section06 .dis .right .ex_inner .ex_right_ul li {
-    line-height: 50px;
+    height: 25px;
+    line-height: 25px;
 }
 
 .sub {

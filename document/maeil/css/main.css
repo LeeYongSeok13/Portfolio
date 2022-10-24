@@ -165,6 +165,34 @@ strong {
     position: relative;
 }
 
+#video .video_mp4 {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 30px);
+    object-fit: cover;
+}
+
+#video .video_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.414;
+    text-align: center;
+    color: #fff;
+}
+
+#video .video_txt h2 {
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+#video .video_txt p {
+    font-size: 25px;
+    font-weight: 500;
+}
+
 .wheel_icon .wheel {
     position: absolute;
     bottom: 10px;
@@ -259,16 +287,20 @@ strong {
     text-align: center;
 }
 
+
 #MainVisual .MainSlider .itm01 {
-    background: #999;
+    background: url('../img/mainvisual01.jpg')no-repeat center center/cover;
+
 }
 
 #MainVisual .MainSlider .itm02 {
-    background: #999;
+    background: url('../img/mainvisual02.jpg') no-repeat center center/cover;
+
 }
 
 #MainVisual .MainSlider .itm03 {
-    background: #999
+    background: url('../img/mainvisual03.jpg') no-repeat center center/cover;
+
 }
 
 #MainVisual .MainSlider .swiper-pagination {
@@ -292,6 +324,7 @@ strong {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* text-shadow: 1px 1px 3px #fff; */
 }
 
 #MainVisual .swiper-slide .txt h2 {
@@ -314,7 +347,7 @@ strong {
 #MainVisual .swiper-slide .txt p {
     font-size: 21px;
     font-weight: 500;
-    padding: 50px 0;
+    padding: 20px 0;
     color: #fff;
     line-height: 1.414;
     transform: translate(0, 50px);
@@ -328,8 +361,7 @@ strong {
 }
 
 #tab {
-    padding: 50px 0 0 0;
-    background: #ddd;
+    padding: 100px;
 }
 
 #tab .container {
@@ -342,7 +374,7 @@ strong {
     font-weight: 500;
     background: inherit;
     margin: 0 0 35px 0;
-    color: #fff;
+    color: #194e92;
 }
 
 #tab .tab_menu ul {
@@ -375,7 +407,7 @@ strong {
 }
 
 #tab .tab_menu .menu>li {
-    border: 1px solid #999;
+    border: 1px solid #ddd;
 }
 
 #tab .tab_menu .menu>li~li {
@@ -384,11 +416,13 @@ strong {
 
 #tab .tab_content {
     position: relative;
+    border: 1px solid #ddd;
+    border-top: none;
 }
 
 #tab .tab_content ul {
     display: none;
-    justify-content: space-between;
+    justify-content: center;
     background: #fff;
 }
 
@@ -406,14 +440,14 @@ strong {
 }
 
 #tab .tab_content .tit p {
-    color: #fff;
+    color: #000;
 }
 
 
 #Footer_top {
     padding: 100px 0 25px 0;
     background: #464d5d;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #777;
 }
 
 #Footer_top .container {
@@ -466,7 +500,6 @@ strong {
 #Footer_top .sns #sns_link {
     outline: none;
     border: none;
-    border: 1px solid #194e92;
     border-radius: 5px;
 }
 

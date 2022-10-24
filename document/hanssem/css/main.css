@@ -274,7 +274,7 @@ p {
 
 .package_slider .slick-dots li.slick-active button {
     width: 30px;
-    background: #f00;
+    background: #ff3300;
 }
 
 .package_arrow i {
@@ -287,7 +287,7 @@ p {
 }
 
 .package_arrow i:hover {
-    color: #f00;
+    color: #ff3300;
 }
 
 .package_arrow i:nth-child(1) {
@@ -359,77 +359,9 @@ p {
     margin: 0 0 10px 0;
 }
 
-#event {
-    padding: 100px 0;
-    text-align: center;
-}
-
-#event h2 {
-    font-size: 35px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-}
-
-#event p {
-    font-size: 15px;
-    font-weight: 300;
-    margin: 0 0 50px 0;
-}
-
-#event .container {
-    display: block;
-}
-
-#event .container {
-    position: relative;
-}
-
-#event .slick-dots {
-    margin: 10px 0 0 0;
-}
-
-#event .slick-dots li {
-    display: inline-block;
-}
-
-#event .slick-dots li button {
-    outline: none;
-    border: 1px solid #000;
-    margin: 0 5px;
-    font-size: 0;
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 50%;
-}
-
-#event .slick-dots li.slick-active button {
-    background: #f00;
-}
-
-#event .event_angle i {
-    position: absolute;
-    inset: 50% auto auto 50%;
-    transform: translate(-50%, -50%);
-    font-size: 75px;
-    cursor: pointer;
-}
-
-#event .event_angle i:hover {
-    color: #369
-}
-
-#event .event_angle i:nth-child(1) {
-    margin: 0 0 0 -700px;
-}
-
-#event .event_angle i:nth-child(2) {
-    margin: 0 0 0 700px;
-}
-
-
 #example {
     padding: 100px 0;
+    background: #eee;
 }
 
 #example .container {
@@ -481,56 +413,72 @@ p {
     text-shadow: 1px 1px 3px #000;
 }
 
-#content {
+#event {
     padding: 100px 0;
-}
-
-#content .container {
-    display: block;
     text-align: center;
 }
 
-#content .container h2 {
+#event h2 {
     font-size: 35px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
-#content .container p {
+#event p {
     font-size: 15px;
     font-weight: 300;
     margin: 0 0 50px 0;
 }
 
-#content .container .content_inner {
-    display: flex;
-    text-align: center;
-    gap: 100px;
+#event .container {
+    display: block;
 }
 
-#content .container .content_inner figure {
-    padding: 25px 50px;
-    border-radius: 20px;
+#event .container {
+    position: relative;
 }
 
-#content .container .content_inner figure img {
-    margin: 0 0 10px 0;
+#event .slick-dots {
+    margin: 10px 0 0 0;
 }
 
-#content .container .home {
-    background: rgba(255, 255, 0, 0.5);
+#event .slick-dots li {
+    display: inline-block;
 }
 
-#content .container .furniture {
-    background: rgba(255, 0, 0, 0.5);
+#event .slick-dots li button {
+    outline: none;
+    border: 1px solid #000;
+    margin: 0 5px;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
 }
 
-#content .container .store {
-    background: rgba(0, 255, 0, 0.5);
+#event .slick-dots li.slick-active button {
+    background: #000;
 }
 
-#content .container .talk {
-    background: rgba(0, 0, 255, 0.5);
+#event .event_angle i {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    cursor: pointer;
+}
+
+#event .event_angle i:hover {
+    color: #ff3300;
+}
+
+#event .event_angle i:nth-child(1) {
+    margin: 0 0 0 -700px;
+}
+
+#event .event_angle i:nth-child(2) {
+    margin: 0 0 0 700px;
 }
 
 #footer {
@@ -765,33 +713,6 @@ p {
         display: block;
     }
 
-    #content {
-        width: auto;
-        margin: 0 40px;
-        padding: 50px 0;
-    }
-
-    #content .container {
-        width: auto;
-        margin: 0 40px;
-    }
-
-    #content .container .content_inner {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
-        grid-auto-rows: minmax(100px, auto);
-    }
-
-    #content .container figure {
-        padding: 25px;
-    }
-
-    #content .container strong {
-        font-size: 13px;
-        font-weight: 300;
-    }
-
     #event {
         padding: 50px 0;
     }
@@ -801,7 +722,7 @@ p {
     }
 
     #footer .container {
-        margin: 0 40px;
+        margin: 0 20px;
         justify-content: space-around;
     }
 

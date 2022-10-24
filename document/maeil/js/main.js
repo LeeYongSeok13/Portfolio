@@ -7,12 +7,9 @@ window.addEventListener('DOMContentLoaded', function () {
             : this.document.querySelector('.main_menu').classList.remove('on')
     });
 
+
     const MainSlider = new Swiper('.MainSlider', {
         loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -66,6 +63,5 @@ window.addEventListener('DOMContentLoaded', function () {
     ScrollBtn.onclick = () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
-
 
 });
