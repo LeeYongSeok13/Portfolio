@@ -132,6 +132,8 @@ p {
 .main_visual_video video {
     position: relative;
     width: 100%;
+    height: calc(100vh - 100px);
+    object-fit: cover;
 }
 
 .wheel_icon .wheel {
@@ -417,6 +419,7 @@ p {
     gap: 30px;
 }
 
+
 .footer .container .content .sns i {
     font-size: 25px;
     padding: 5px;
@@ -426,7 +429,7 @@ p {
 }
 
 .footer .container .information p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     text-align: left;
 }
