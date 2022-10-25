@@ -174,7 +174,7 @@ img {
 
 .section02 {
     position: relative;
-    color: #194e92;
+    color: #555555;
 }
 
 .section02 .left {
@@ -197,14 +197,14 @@ img {
     display: block;
     font-size: 35px;
     font-weight: 700;
-    color: #194e92;
-    margin: 0 0 30px 0;
+    color: #555555;
+    margin: 0 0 50px 0;
 }
 
 .section02 .left h2 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 50px 0;
+    margin: 0 0 80px 0;
 }
 
 .section02 .left h3 {
@@ -248,7 +248,7 @@ img {
     height: 20px;
     border: 1px solid #ddd;
     border-radius: 50%;
-    background: #194e92;
+    background: #333;
 }
 
 .section02 .left .Color .Color_inner .col03 {
@@ -257,7 +257,7 @@ img {
     height: 20px;
     border: 1px solid #ddd;
     border-radius: 50%;
-    background: #464d5d;
+    background: #ff1111;
 }
 
 .section02 .right {
@@ -284,7 +284,7 @@ img {
     right: 0;
     width: 1200px;
     height: 100vh;
-    background: #99ccff;
+    background: #cccccc;
 }
 
 .section02 .right figure a {
@@ -460,7 +460,7 @@ img {
 
 .section04 {
     position: relative;
-    color: #555555;
+    color: #194e92;
 }
 
 .section04 .left {
@@ -483,14 +483,14 @@ img {
     display: block;
     font-size: 35px;
     font-weight: 700;
-    color: #555555;
-    margin: 0 0 50px 0;
+    color: #194e92;
+    margin: 0 0 30px 0;
 }
 
 .section04 .left h2 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section04 .left h3 {
@@ -534,7 +534,7 @@ img {
     height: 20px;
     border: 1px solid #ddd;
     border-radius: 50%;
-    background: #333;
+    background: #194e92;
 }
 
 .section04 .left .Color .Color_inner .col03 {
@@ -543,7 +543,7 @@ img {
     height: 20px;
     border: 1px solid #ddd;
     border-radius: 50%;
-    background: #ff1111;
+    background: #464d5d;
 }
 
 .section04 .right {
@@ -570,7 +570,7 @@ img {
     right: 0;
     width: 1200px;
     height: 100vh;
-    background: #cccccc;
+    background: #99ccff;
 }
 
 .section04 .right figure a {
@@ -608,7 +608,6 @@ img {
     background: #fff;
     color: #99ccff;
 }
-
 
 .section05 {
     position: relative;
