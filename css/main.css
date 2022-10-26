@@ -198,13 +198,13 @@ img {
     font-size: 35px;
     font-weight: 700;
     color: #555555;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .section02 .left h2 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section02 .left h3 {
@@ -394,13 +394,13 @@ img {
     font-size: 35px;
     font-weight: 700;
     color: #00cccc;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .section03 .right h2 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section03 .right h3 {
@@ -680,13 +680,13 @@ img {
     font-size: 35px;
     font-weight: 700;
     color: #dd2233;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .section05 .right h2 {
     font-size: 22px;
     font-weight: 500;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section05 .right h3 {
@@ -708,6 +708,7 @@ img {
 .section05 .right p {
     font-size: 15px;
     font-weight: 300;
+    line-height: 1.414;
     margin: 0 0 20px 0;
 }
 
@@ -770,20 +771,20 @@ img {
     font-size: 35px;
     font-weight: 700;
     color: #3a1a65;
-    margin: 0 0 50px 0;
+    margin: 0 0 30px 0;
 }
 
 .section06 .left h2 {
     font-size: 22px;
     font-weight: 500;
     line-height: 1.414;
-    margin: 0 0 80px 0;
+    margin: 0 0 50px 0;
 }
 
 .section06 .left h3 {
     font-size: 21px;
     font-weight: 700;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
 }
 
 .section06 .left p {
@@ -893,7 +894,9 @@ img {
     width: 100%;
     display: flex;
     gap: 20px;
+    margin: 0 0 50px 0;
     justify-content: center;
+
 }
 
 .section07 .container .middle figure {
@@ -924,6 +927,29 @@ img {
     position: relative;
     padding: 5px 20px;
     border: 1px solid #ddd;
+}
+
+.section07 .container .bottom {
+    display: flex;
+    width: 1200px;
+    padding: 0 70px;
+    text-align: center;
+}
+
+.section07 .container .bottom .name {
+    width: 300px;
+}
+
+.section07 .container .bottom .name a {
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.section07 .container .bottom .name:hover a {
+    background: #333;
+    color: #fff;
 }
 
 .section08 .dis h2 {
@@ -1146,17 +1172,15 @@ img {
 #footer {
     position: fixed;
     bottom: 50px;
-    left: calc(100% - 785.91px);
+    right: 85px;
     z-index: 999;
     opacity: 1;
     visibility: visible;
 }
 
-#footer {
-    position: fixed;
-    left: 1700px;
-    bottom: 50px;
-    z-index: 999;
+#footer.on {
+    opacity: 0;
+    visibility: hidden;
 }
 
 #footer ul {
@@ -1164,7 +1188,7 @@ img {
 }
 
 #footer ul li {
-    width: 25px;
+    width: 30px;
 }
 
 #footer ul li a {
@@ -1178,7 +1202,8 @@ img {
 #footer ul li a::after {
     content: "";
     position: absolute;
-    right: 80px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 1px;
     height: 30%;
     background: #000;

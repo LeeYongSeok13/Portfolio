@@ -164,8 +164,8 @@
 }
 
 #Information {
-    padding: 100px 0;
-    height: 590px;
+    padding: 50px 0;
+    height: 460px;
 }
 
 #Information .container {
@@ -208,6 +208,13 @@
     font-weight: 500;
     line-height: 1.414;
     margin: 0 0 20px 0;
+}
+
+#Information .information_main .left p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 14px 0;
+    line-height: 1.414;
 }
 
 #Information .information_main .left a {
@@ -257,35 +264,8 @@
     color: #6666ff;
 }
 
-#Sns {
-    padding: 100px 0;
-}
-
-#Sns .container {
-    display: block;
-}
-
-#Sns .sns_main {
-    width: 1200px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#Sns .sns_main h2 {
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 55px;
-}
-
-#Sns .sns_main .icon i {
-    font-size: 35px;
-    padding: 10px;
-    background: #ddd;
-    border-radius: 50%;
-}
-
 #Clip {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #Clip .container {
@@ -343,9 +323,8 @@
     background: rgba(0, 0, 0, 0.5);
 }
 
-
 #Program {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 #Program .container {
@@ -423,18 +402,18 @@
 }
 
 #footer_bottom .broadcast {
-    display: flex;
+    display: block;
 }
 
 #footer_bottom .broadcast p {
     font-size: 13px;
     font-weight: 300;
-    margin: 0 50px 0 0;
+    margin: 0 0 5px 0;
 }
 
 #footer_bottom .broadcast ul {
-    display: flex;
-    gap: 20px;
+    display: block;
+    margin: 0 0 5px 0;
 }
 
 #footer_bottom .broadcast ul li {
@@ -443,14 +422,7 @@
     font-weight: 300;
 }
 
-#footer_bottom .broadcast ul li~li:before {
-    position: absolute;
-    content: "";
-    display: block;
-    top: 50%;
-    left: -10px;
-    transform: translateY(-50%);
-    width: 1px;
-    height: 8px;
-    background: #fff;
+#footer_bottom .imbc p {
+    font-size: 13px;
+    font-weight: 300;
 }
